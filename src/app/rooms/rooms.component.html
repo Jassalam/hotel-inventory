@@ -1,1 +1,22 @@
-<p>welcome to {{hotelName}}</p>
+
+<!--Interpolation-->
+<p>welcome to {{hotelName}}</p> 
+
+<!--Property Bindning with div property of innertext providing value from ts file-->
+Numbers of Rooms:
+<div [innerText]="numberOfRooms"></div>
+<br>
+<br>
+<br>
+<!--Event binding using the some event like click, focus out-->
+<div [hidden]="hideRooms">
+Numbers of Rooms:
+<div [innerText]="numberOfRooms"></div></div>
+
+<div *ngIf="rooms.availableRooms > 0">
+
+    Room List:
+    
+</div>
+<br><br>
+<button (click)="toggle()"> Hide/show Rooms</button>
